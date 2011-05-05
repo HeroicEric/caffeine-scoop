@@ -15,7 +15,7 @@ DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/caffeine
 
 # Finalize/initialyize DB
 DataMapper.finalize
-DataMapper::auto_migrate!
+DataMapper::auto_upgrade!
 
 def get_json(query, api)
   if api == "google" then
@@ -53,11 +53,6 @@ def get_feed(api, keywords)
   end
 end
 
-error do
-  @error = request.env['sinatra_error'].name
-  haml :'500'
-end
-
 ################################################
 
 get '/' do
@@ -93,8 +88,10 @@ post '/page' do
 end
 
 # View a Page
-get '/page/:slug' do
+get '/:slug' do
   @page = Page.first(:slug => params[:slug])
+  @articles = get_feed("google", @page.keywords)
+  @tweets = get_feed("twitter", "caffeine")
 
   haml :page
 end
