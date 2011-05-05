@@ -89,11 +89,11 @@ end
 
 # View a Page
 get '/page/:slug' do
-  @page = Page.first(:slug => params[:slug])
-#  @articles = get_feed("google", @page.keywords)
-#  @tweets = get_feed("twitter", "caffeine")
+#  @page = Page.first(:slug => params[:slug])
+  @articles = get_feed("google", @page.keywords)
+  @tweets = get_feed("twitter", "caffeine")
 
-  haml :page_fix
+  haml :page
 end
 
 # Edit Page
