@@ -15,7 +15,7 @@ DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/caffeine
 
 # Finalize/initialyize DB
 DataMapper.finalize
-DataMapper::auto_upgrade!
+DataMapper::auto_migrate!
 
 def get_json(query, api)
   if api == "google" then
@@ -90,8 +90,6 @@ end
 # View a Page
 get '/page/:slug' do
   @page = Page.first(:slug => params[:slug])
-  @articles = get_feed("google", @page.keywords)
-  @tweets = get_feed("twitter", "caffeine")
 
   haml :page
 end
