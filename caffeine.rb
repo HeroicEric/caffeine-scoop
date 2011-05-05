@@ -88,8 +88,8 @@ post '/page' do
 end
 
 # View a Page
-get '/:slug' do
-#  @page = Page.first(:slug => params[:slug])
+get '/page/:slug' do
+  @page = Page.first(:slug => params[:slug])
 #  @articles = get_feed("google", @page.keywords)
 #  @tweets = get_feed("twitter", "caffeine")
 
