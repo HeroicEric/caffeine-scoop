@@ -1,0 +1,419 @@
+/* @override http://localhost:9393/css/style.css */
+
+/*
+Type-A-File "Kickoff" designed by Russ Maschmeyer, aka StrangeNative.
+http://www.strangenative.com
+@strangenative
+
+Creative Commons License by Attribution. 
+Feel free to take it, adapt it, & use it on both commercial and non-commercial projects.
+Though I'd like a smidgeon of credit, so just leave this bit in here. K?
+*/
+/*Pick Your Fonts*/
+body,
+h3,
+h4,
+h5,
+h6 { font-family: 'Helvetica Neue', Arial, sans-serif }
+cite:before { content: "- " }
+dt:before {
+    content: "\2767";
+    font-size: 1.25em;
+    text-indent: -1.5em;
+    float: left;
+}
+h1 + img,
+h2 + img { margin-top: 1em }
+
+/*Size & Vertical Rhythm*/
+body {
+	background: -moz-linear-gradient(top, #bed8ec, #bed8ec);
+	background: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#bed8ec));
+	background: -o-linear-gradient(top, #ffffff, #bed8ec);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#bed8ec');
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.58em;
+}
+#container {
+  width: 960px;
+  margin: 0 auto;
+}
+/*HTML Standard Elements*/
+h1 {
+    font-size: 3em;
+    line-height: 1.333em;
+    margin: .7em 0 0em;
+}
+h2 {
+    font-size: 2em;
+    line-height: 1.1em;
+    margin: 2em 0 .5em;
+}
+h3 { font-size: 1.125em }
+h4 {
+    font-weight: bold;
+    font-size: 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+}
+small {
+    display: block;
+    font-size: .75em;
+    letter-spacing: .05em;
+    margin: 2.2em 0 -.2em;
+    font-style: italic;
+    line-height: 1.75em;
+}
+p,
+ul,
+ol,
+form { margin: 1.5em 0 1em }
+    p span.pullquote { text-indent: 0 }
+ul {
+    list-style-position: outside;
+    list-style-type: disc;
+    line-height: 1.5;
+}
+li { margin-bottom: .75em }
+ol {
+    list-style-position: outside;
+    list-style-type: decimal;
+}
+blockquote {
+    font-style: italic;
+    line-height: 1.75em;
+    font-size: 1.2em;
+    margin-left: 45px;
+}
+cite {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin-top: 1em;
+    font-weight: 900;
+  margin-left: 45px;
+}
+pre { margin: 1.5em }
+dl {
+    margin: 1.45em 0; /*border-top: 1px dotted #999;border-bottom:1px dotted #999;*/;
+}
+dt {
+    word-spacing: .2em;
+    border-bottom: 1px dotted #999;
+    margin-top: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: .2em;
+    padding-bottom: .5em;
+}
+dd {
+    font-style: italic;
+    font-size: .9em;
+    margin-bottom: 1.65em;
+    line-height: 1.75em;
+    margin-top: .75em;
+}
+abbr {
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: .1em;
+}
+p {
+    margin-bottom: 0;
+    hyphenate: auto;
+    hyphenate-before: 2;
+    hyphenate-after: 3;
+    hyphenate-lines: 3;
+    orphans: 4;
+}
+
+/* Main */
+header {
+  margin-bottom: 20px;
+}
+header h1 {
+  float: left;
+}
+nav ul {
+  float: right;
+  margin-top: 65px;
+}
+nav ul li {
+  display: inline;
+}
+.banner {
+ 	background: #6cb7ec;
+ 	color: #fff;
+ 	width: 958px;
+ 	border-top: 1px solid #9fb8ca;
+ 	border-left: 1px solid #9fb8ca;
+ 	border-right: 1px solid #9fb8ca;
+ 	margin-bottom: 7px;
+	
+	moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+.banner .kicker {
+  padding: 30px;
+}
+.banner .kicker .run-in {
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+.banner p {
+  margin-top: 0;
+}
+.big-three {
+  float: left;
+	padding: 30px;
+  border: 1px solid #ccc;
+	background: #FFFFFF;
+  margin-bottom: 30px;
+}
+.big-three h2 {
+  margin-top: 5px;
+}
+.thesis-point {
+  width: 30%;
+  margin-left: 4px;
+  float: left;
+}
+.thesis-point.middle {
+  margin: 0 20px 0 20px;
+  padding: 0 20px 0 20px;
+  border-left: 1px dotted #ccc;
+  border-right: 1px dotted #ccc;
+}
+.page {
+	padding: 0 30px 30px;
+  border: 1px solid #ccc;
+	background: #FFFFFF;
+  margin-bottom: 30px;
+}
+#feeds {
+	background: #d0e6f1;
+	border: 1px solid #9fb8ca;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 30px;
+}
+#feeds h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+#google {
+  width: 570px;
+  float: left;
+}
+#google article {
+	padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #9fb8ca;
+}
+#google article:last-child {
+  border:none;
+}
+#google p {
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+#twitter {
+  width: 270px;
+  float: right;
+}
+#twitter img {
+	width: 48px;
+	height: 48px;
+  border: 3px solid #9fb8ca;
+}
+#twitter ul {
+  list-style: none;
+  float: left;
+  margin-top: 0;
+}
+#twitter li {
+	display: block;
+	float: left;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #9fb8ca;
+  font-size: 0.8em;
+}
+#twitter ul li:last-child {
+  border: none;
+}
+#twitter .thumb {
+	width: 50px;
+  float: left;
+  margin-right: 15px;
+}
+#twitter .content {
+	width: 200px;
+  float: right;
+}
+footer {
+  margin-bottom: 50px;
+}
+
+/*Compositional Elements*/
+.kicker {
+    font-size: 1.33em;
+    line-height: 1.693em;
+    font-style: italic;
+    margin: -.35em 0 -.35em;
+}
+.kicker,
+.pullquote { font-weight: 300 }
+.run-in {
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: .15em;
+    font-size: .9em;
+    font-weight: bold;
+}
+.superscript {
+    font-family: arial, sans-serif;
+    vertical-align: super;
+    font-size: 75%;
+    margin-right: .4em;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: .1em;
+    line-height: 0;
+}
+.subscript {
+    font-family: arial, sans-serif;
+    vertical-align: sub;
+    font-size: 75%;
+    margin-right: .4em;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: .1em;
+    line-height: 0em;
+}
+a.superscript,
+a.subscript { text-decoration: none }
+aside,
+.sidenote {
+    font-size: .83em;
+    font-style: italic;
+    margin-top: 1.2em;
+}
+    aside h1,
+    .sidenote h1 {
+        text-transform: uppercase;
+        font-size: 1em;
+        line-height: 1.5em;
+        font-style: normal;
+        letter-spacing: .2em;
+        font-weight: 900;
+    }
+    aside ul,
+    aside ol,
+    .sidenote ul,
+    .sidenote ol {
+        margin-top: 1.3em;
+        line-height: 1.7em;
+    }
+        aside ul li,
+        aside ol li,
+        .sidenote ul li,
+        .sidenote ol li { margin-bottom: 1.3em }
+    aside p,
+    .sidenote p {
+        line-height: 1.7em;
+        margin: 1.3em 0;
+        font-style: normal;
+    }
+    h1,
+    h2,
+    .pullquote,
+    blockquote,
+    .sidenote h1,
+    aside h1,
+    .pullquote,
+    .kicker,
+    .drop-cap,
+    .run-in,
+    cite,
+    dt { font-family: "ff-enzo-web-1","ff-enzo-web-2", sans-serif }
+.pullquote:before {
+    font-family: Georgia, serif;
+    content: "“";
+    font-size: 1.5em;
+    text-indent: -.7em;
+    margin-top: .05em;
+    float: left;
+    opacity: .3;
+}
+.kicker .run-in {
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: .25em;
+    font-size: .9em;
+}
+blockquote:before {
+    font-family: Georgia, serif;
+    content: "“";
+    font-size: 2.75em;
+    text-indent: -.95em;
+    margin-top: .1em;
+    float: left;
+    opacity: .3;
+}
+.pullquote {
+    font-style: italic;
+    letter-spacing: .05em;
+    margin: .3em .7em .3em -.5em;
+    padding-top: .15em;
+    line-height: 1.5em;
+    display: block;
+    float: left;
+    font-size: 2em;
+    width: 55%;
+}
+.footnote {
+    border-top: 1px solid black;
+    font-size: .75em;
+    margin-top: 3.5em;
+}
+    .footnote li {
+        margin: 1.5em 0 1.5em;
+        word-spacing: .1em;
+        line-height: 1.75em;
+    }
+.caption {
+    font-size: .8em;
+    font-style: italic;
+    margin: .6em 0 -.2em;
+}
+.drop-cap {
+    display: block;
+    font-style: normal;
+    font-size: 5.75em;
+    float: left;
+    margin: .04em .1em 0 0;
+    line-height: .67em;
+    font-weight: 700;
+}
+/*Tweaks*/
+.kern { letter-spacing: -.1em }
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
+   j.mp/bestclearfix */
+.cf:before, .cf:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.cf:after { clear: both; }
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.cf { zoom: 1; }

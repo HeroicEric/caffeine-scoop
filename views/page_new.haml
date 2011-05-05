@@ -1,0 +1,7 @@
+%h1 Add a New Page
+
+%form#post(action="/page" method="POST")
+	
+	= haml :page_form, :layout => false
+	
+	%input#submit(type="submit" value="Submit") or <a href="/">cancel</a>
