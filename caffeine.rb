@@ -4,7 +4,6 @@ require 'data_mapper'
 require 'haml'
 require 'json'
 require 'net/http'
-require 'digest/md5'
 
 # Require Models
 Dir.glob("#{Dir.pwd}/models/*.rb") { |m| require "#{m.chomp}" }
