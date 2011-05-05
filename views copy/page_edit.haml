@@ -1,9 +1,0 @@
-%h1 Edit Page
-%h2 #{@page.title}
-
-%form(action="/#{@page.slug}" method="POST")
-	%input(type="hidden" name="_method" value="PUT")
-	
-	= haml :page_form, :layout => false
-
-	%input#submit(type="submit" value="Submit") or <a href="/#{@page.slug}">cancel</a>
