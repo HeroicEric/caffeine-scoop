@@ -1,0 +1,22 @@
+.page.cf
+  %p= @page.body
+
+#feeds.cf
+  #google
+    %h2 Similar Articles
+    -(0..2).each do |i|
+      %article
+        - key = i
+        %h3 #{@articles[i]['title']}
+        %p #{@articles[i]['content']}
+        %a(href="#{@articles[i]['signedRedirectUrl']}") Read More
+  #twitter
+    %h2 Caffeine Tweets
+    %ul
+      -(0..4).each do |i|
+        %li.last
+          .thumb
+            %img(src="#{@tweets[i]['profile_image_url']}")
+          .content
+            %a(href="http://twitter.com/#{@tweets[i]['from_user']}") @#{@tweets[i]['from_user']}
+            = " " + @tweets[i]['text']
