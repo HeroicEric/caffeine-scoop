@@ -1,16 +1,4 @@
 .page.cf
   %p= @page.body
 
-#feeds.cf
-  #google
-    %h2 Similar Articles
-    - if @articles.length <= 3 then
-      - @amount = @articles.length
-    - else
-      - @amount = 3
-    -(0..@amount-1).each do |i|
-      %article
-        - key = i
-        %h3 #{@articles[i]['title']}
-        %p #{@articles[i]['content']}
-        %a(href="#{@articles[i]['signedRedirectUrl']}") Read More
+

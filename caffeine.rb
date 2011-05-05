@@ -89,7 +89,6 @@ end
 # View a Page
 get '/:slug' do
   @page = Page.first(:slug => params[:slug])
-  @articles = get_feed("google", @page.keywords)
 
   haml :page
 end
