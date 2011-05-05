@@ -9,8 +9,6 @@ class Page
 	property :created_at, DateTime
 	property :updated_at, DateTime
 	
-	has n, :comments
-	
 	def url
 		"/#{slug}"
 	end
