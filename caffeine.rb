@@ -4,7 +4,6 @@ require 'data_mapper'
 require 'haml'
 require 'json'
 require 'net/http'
-require 'digest/md5'
 
 # Require Models
 Dir.glob("#{Dir.pwd}/models/*.rb") { |m| require "#{m.chomp}" }
@@ -88,7 +87,7 @@ post '/page' do
 end
 
 # View a Page
-get '/:slug' do
+get '/page/:slug' do
   @page = Page.first(:slug => params[:slug])
   @articles = get_feed("google", @page.keywords)
   @tweets = get_feed("twitter", "caffeine")
