@@ -2,4 +2,3 @@ sinatra
 data_mapper
 dm-postgres-adapter
 json
-net/http
