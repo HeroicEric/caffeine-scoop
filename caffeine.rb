@@ -87,10 +87,9 @@ post '/page' do
 end
 
 # View a Page
-get '/page/:slug' do
+get '/:slug' do
   @page = Page.first(:slug => params[:slug])
   @articles = get_feed("google", @page.keywords)
-  @tweets = get_feed("twitter", "caffeine")
 
   haml :page
 end
