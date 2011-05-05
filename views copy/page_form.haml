@@ -1,0 +1,14 @@
+%ol
+  %li
+    %label(for="title") Title:
+    %input(type="text" name="title" placeholder="Title Here" value="#{@page.title}")
+  %li
+    %label(for="slug") Slug:
+    %input(type="text" name="slug" placeholder="Slug" value="#{@page.slug}")
+  %li
+    %label(for="keywords") Keywords:
+    %input(type="text" name="keywords" placeholder="Keywords" value="#{@page.keywords}")
+  %li
+    %label(for="body") Body:
+    %textarea.ckeditor(name="body")
+      =@page.body

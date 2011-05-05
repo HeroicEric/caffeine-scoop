@@ -1,0 +1,51 @@
+!!! 5
+%html
+  %head
+    %meta(charset="utf-8")
+    %meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+
+    %title Caffeine Scoop
+		
+    %meta(name="description" content="")
+    %meta(name="author" content="Eric Kelly")
+
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    %link(rel="shortcut icon" href="/favicon.ico")
+    %link(rel="apple-touch-icon" href="/apple-touch-icon.png")
+
+    %link(rel="stylesheet" href="/css/reset.css")
+    %link(rel="stylesheet" href="/css/style.css")
+    %link(rel="stylesheet" href="/css/jquiz.css")
+		
+    %script(src="/js/libs/modernizr-1.7.min.js")
+    / TODO: CHANGE FOR PRODUCTION
+    %script(type="text/javascript" src="http://use.typekit.com/llz5vet.js")
+    %script(type="text/javascript")
+      try{Typekit.load();}catch(e){}
+
+    %body
+
+      #container
+        
+        %header.cf
+          %h1 Caffeine Scoop
+
+          %nav
+            %ul
+              %li
+                %a(href="/") Home
+              %li
+                %a(href="#") Caffeine
+              %li
+                %a(href="#") Attention
+              %li
+                %a(href="#") Physical
+              %li
+                %a(href="#") Disease
+
+        #main
+
+          = yield
+
+        =haml :footer, :layout => false
