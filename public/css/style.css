@@ -141,13 +141,15 @@ header {
 }
 header h1 {
   float: left;
+  font-size: 2.5em;
 }
 nav ul {
   float: right;
-  margin-top: 65px;
+  margin-top: 50px;
 }
 nav ul li {
   display: inline;
+  margin-left: 20px;
 }
 .banner {
  	background: #6cb7ec;
@@ -191,6 +193,9 @@ nav ul li {
   margin-left: 4px;
   float: left;
 }
+.thesis-point h3 {
+  color: #6b94c9;
+}
 .thesis-point.middle {
   margin: 0 20px 0 20px;
   padding: 0 20px 0 20px;
@@ -202,6 +207,9 @@ nav ul li {
   border: 1px solid #ccc;
 	background: #FFFFFF;
   margin-bottom: 30px;
+}
+.page h1 {
+  color: #6b94c9;
 }
 #feeds {
 	background: #d0e6f1;

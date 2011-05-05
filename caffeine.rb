@@ -88,12 +88,12 @@ post '/page' do
 end
 
 # View a Page
-get '/page/:slug' do
-#  @page = Page.first(:slug => params[:slug])
+get '/:slug' do
+  @page = Page.first(:slug => params[:slug])
   @articles = get_feed("google", @page.keywords)
   @tweets = get_feed("twitter", "caffeine")
 
-  haml :page_fix
+  haml :page
 end
 
 # Edit Page
@@ -104,7 +104,7 @@ get '/:slug/edit' do
 end
 
 # Update Page
-put '/page/:slug' do
+put '/:slug' do
   @page = Page.first(:slug => params[:slug])
 
   if @page.update(
